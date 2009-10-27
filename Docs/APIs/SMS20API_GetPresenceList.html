@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum J2ME SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://www.netbeans.org"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>GetPresenceList</h3>
+
+		Get a Vector with the List of presence contacts included in the XML String returned by Polling Function, if it has a new list of presence.
+		<br><br>
+		<font face="Courier New">public Vector GetPresenceList(String XMLPolling);</font><br><br>
+
+		<b>Parameters</b><br>
+		<i>String</i> with the XML String returned by the Polling request.
+		
+		<br/><br/>
+		<b>Return</b><br>
+		<i>Vector</i> of CSMS20Contact with the contacts states. Empty if the XML String has no new contact authorisation.
+	</div>
+</div>
+</body>
+</html>

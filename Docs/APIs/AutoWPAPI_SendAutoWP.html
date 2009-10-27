@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum J2ME SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://www.netbeans.org"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>SendAutoWP</h3>
+
+		Established a http connection to the server sending the parameters via POST.
+		
+		It waits until the Server complete the Sending (using the serverGeneralError or the serverResultPost functions) and return a value depending of the Response of the Server.<br><br>
+
+		<font face="Courier New">public String SendAutoWP(String Login, String Pwd, String URL, String Text) ;</font><br><br>
+
+		<b>Parameters</b><br>
+		<i>Login</i><br>
+		&nbsp;&nbsp;String with sender's telephone number<br><br>
+		<i>Pwd</i><br>
+		&nbsp;&nbsp;String with sender's password<br><br>
+		<i>URL</i><br>
+		&nbsp;&nbsp;String with the URL where the POST petition is going to be sent<br><br>
+		<i>Text</i><br>
+		&nbsp;&nbsp;String with the text which is going to be sent to the URL.<br><br>
+
+		<b>Return</b><br>
+			0 OK.<br/>
+			1 If login format not correct.<br/>
+			2 URL is not correct.<br/>
+			3 Password format is not correct.<br/>
+			4 User is not allowed to use this service.<br/>
+			5 User does not exist.<br/>
+			6 Password is not correct.<br/>
+			7 User is spired.<br/>
+			8 Text format is not correct.<br/>
+			9 Connection cannot be stablished<br/>
+			-2 Error: The connection with the Server cannot be stablished.<br/>
+			-3 Error: Non security error.<br/>
+			
+		<br><br>
+	</div>
+</div>
+</body>
+</html>

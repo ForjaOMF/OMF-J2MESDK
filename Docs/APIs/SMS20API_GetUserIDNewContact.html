@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum J2ME SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://www.netbeans.org"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>GetUserIDNewContact</h3>
+
+		Get a String with the ID of the User which has sent an authorization request from a XML String returned by Polling Function, if it has a new authorization request.
+		<br><br>
+		<font face="Courier New">public String GetUserIDNewContact(String XMLPolling);</font><br><br>
+
+		<b>Parameters</b><br>
+		<i>String</i> with the XML String returned by the Polling request.
+		
+		<br/><br/>
+		<b>Return</b><br>
+		<i>String</i> with the User ID which wants to be authorised. Empty if the XML String has no new contact.
+	</div>
+</div>
+</body>
+</html>

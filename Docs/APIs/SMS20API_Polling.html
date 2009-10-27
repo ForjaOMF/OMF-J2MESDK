@@ -1,0 +1,38 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum J2ME SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://www.netbeans.org"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>Polling</h3>
+
+		Wait for a response of the SMS 2.0 platform. 
+		<br><br>
+		<font face="Courier New"> public String Polling();</font><br><br>
+
+		<b>Parameters</b><br>
+		<i>-</i>
+		<br/>		
+		<b>Return</b><br>
+		<i>String</i> with a XML structure with the followings posibles responses:
+			
+		<ul>
+			<li>Empty string - no body in the response</li><br>
+			<li>An authorization request. One user wants to be added to your contact list. Use isNewContact(String XMLPolling) to check it, GetUserIDNewContact(String XMLPolling) to get the User ID (telephone number) and GetTransactionIDNewContact(String XMLPolling) to get the Transaction ID needed to authorise the contact.</li><br>
+			<li>A new message. One user has sent you a message. Use IsNewMessage(String XMLPolling) to check it, GetUserIDMessage(String XMLPolling) to get the user ID (telephone number) and GetMessage(String XMLPolling) to get the message.</li><br>
+			<li>A contact presence list. A status of the presence of the contacts has been changed. You will receive a new list with all the states of the contacts. Use IsPresenceList(String XMLPolling) to check it and GetPresenceList(String XMLPolling) to get a vector with the contacts.</li><br>
+	</div>
+</div>
+</body>
+</html>
